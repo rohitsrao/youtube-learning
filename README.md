@@ -1,2 +1,2 @@
 # youtube-learning
-Collection of code from YouTube tutorials
+Collection of codes written by coding along to YouTube tutorials
