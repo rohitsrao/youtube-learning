@@ -11,7 +11,7 @@ class DonateMovieTest(unittest.TestCase):
         self.library.donate(self.movie)
 
 
-    def test_donate_movie(self):
+    def test_add_movie_to_library(self):
         self.assertTrue(self.library.contains(self.movie))
 
     def test_copy_added(self):
