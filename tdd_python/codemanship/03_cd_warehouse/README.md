@@ -8,5 +8,53 @@ What are meaningful tests ?!
 Differnce between test driven design and design driven testing
 How writing lists of tests before writing code can help guide the process
 
+Scenario
+-------
+Customers can buy CDs directly from warehouse.
+Record labels send batches of CDs to warehouse
+Customers can only order titles in stock
+
 Learnings
 ---------
+
+1. TDD does not mean that you do not pay attention to the design
+
+2. But paying too much attention upfront to the design can lead to design
+driven testing where you end up looking at a design and asking what tests
+do I need to write for this design. This is thinking it the wrong way around.
+Design driven thinking looks like writing tests for constructors and every method
+from the preconceived idea of what the design should be
+
+3. With TDD, as the name suggests, we should come up with the simplest design
+that passes our tests
+
+4. Good to think about the design but not get too attached to it. 
+
+5. Think more in useful outcomes rather than the design.
+Test should be based on what things the customer or end user wants from the software.
+Class methods are consequences of some useful outcomes to the customer. 
+i.e Customer wants to know CD stock count so you end up with CD.getStockCount()
+
+6. Read the requirements and think about testcases
+
+
+Requirements 
+-----------
+
+Requirements are reformulated as outcomes that design must achieve
+What is the software got to do. 
+Don't focus too much on design when writing requirements
+What the software must do gives us the test cases that we must handle
+
+Buy a CD
+* In Stock - quantity bought deducted from stock
+* Insufficient stock - raise an exception
+
+Searching for a CD
+* if in catalogue - return the matching CD
+* if not in catalouge - return null
+
+Receiving batch of CDs
+* Copies of 1 CD in catalouge - add copies to each CD
+* Copies of CDs not in catalouge - CD added to catalouge with copies
+* Batch of multiple CDs - add any missing CDs to catalouge, add copies to each CD
