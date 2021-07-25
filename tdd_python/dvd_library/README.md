@@ -25,3 +25,6 @@ This also makes it easy to add new behaviours to test going forward
 
 6. Test code is production code too and needs to be maintained
 
+7. Good to aim for one outcome per test as a test design as it helps pinpoints problems 
+specifically and quickly
+
