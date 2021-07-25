@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopping_basket.egg-info/PKG-INFO
+shopping_basket.egg-info/SOURCES.txt
+shopping_basket.egg-info/dependency_links.txt
+shopping_basket.egg-info/top_level.txt
