@@ -37,6 +37,11 @@ i.e Customer wants to know CD stock count so you end up with CD.getStockCount()
 
 6. Read the requirements and think about testcases
 
+7. As you are writing the tests, you have to consider design questions like
+okay I do need a method that returns the stock count for a cd. As much as possible
+let the test making the decisions about the details of the design that we need. As much as possible
+let the test making the decisions about the details of the design that we need
+
 
 Requirements 
 -----------
