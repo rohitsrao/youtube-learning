@@ -1,5 +1,0 @@
-setup.py
-flaskner.egg-info/PKG-INFO
-flaskner.egg-info/SOURCES.txt
-flaskner.egg-info/dependency_links.txt
-flaskner.egg-info/top_level.txt
