@@ -18,3 +18,7 @@ have enough implementation to see that the test assertion fails. But only just e
 
 4. Refactor the code if needed
 
+5. As much as possible a test should test for a single assertion so that it is clear
+when a test fails what caused the issue. If a test contains multiple assertions, then it is 
+extra work to figure out which of the issues that could fail a test actually failed the test
+
