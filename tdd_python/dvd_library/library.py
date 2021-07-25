@@ -1,3 +1,5 @@
+from movie import Movie
+
 class Library:
 
     def __init__(self):
@@ -5,7 +7,7 @@ class Library:
     
     def donate(self, movie):
         self.catalouge.append(movie)
-        movie.copies += 1
+        movie.add_copy()
 
     def contains(self, movie):
         return (movie in self.catalouge)
