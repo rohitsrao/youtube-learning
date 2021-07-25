@@ -11,7 +11,7 @@ class DonateMovieTest(unittest.TestCase):
         library.donate(movie)
         #self.assertTrue(movie in library.catalouge)
         self.assertTrue(library.contains(movie))
-        self.assertEqual(1, movie.copies)
+        self.assertEqual(1, movie.get_copies())
 
 if __name__ == '__main__':
     pass
