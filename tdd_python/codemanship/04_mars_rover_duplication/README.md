@@ -18,3 +18,5 @@ that we end up introducing a wrong abstraction
 before refactoring the code
 
 4. Naturally the longer you wait to refactor the more time it takes to refactor
+
+5. Test code needs to be maintained just like source code

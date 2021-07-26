@@ -6,9 +6,6 @@ class Rover(object):
     facing: str
 
     def go(self, instruction):
-        if self.facing == 'N':
-            return replace(self, facing = 'E')
-        if self.facing == 'E':
-            return replace(self, facing='S')
-
-        return replace(self, facing='W')
+        compass = ['N', 'E', 'S', 'W']
+        current = compass.index(self.facing)
+        return replace(self, facing=compass[current + 1])
