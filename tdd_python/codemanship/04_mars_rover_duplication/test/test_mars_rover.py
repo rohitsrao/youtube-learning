@@ -9,6 +9,7 @@ class MarsRoverTest(unittest.TestCase):
         ('N', 'E'),
         ('E', 'S'),
         ('S', 'W'),
+        ('W', 'N')
     ])
 
     def test_turns_clockwise(self, starts_facing, ends_facing):

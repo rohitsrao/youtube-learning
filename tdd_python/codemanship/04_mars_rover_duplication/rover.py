@@ -8,4 +8,4 @@ class Rover(object):
     def go(self, instruction):
         compass = ['N', 'E', 'S', 'W']
         current = compass.index(self.facing)
-        return replace(self, facing=compass[current + 1])
+        return replace(self, facing=compass[(current + 1) % 4])
