@@ -18,8 +18,20 @@ that we end up introducing a wrong abstraction
 before refactoring the code
 
 4. Naturally the longer you wait to refactor the more time it takes to refactor
+and hence you tend to not do it
 
 5. Test code needs to be maintained just like source code
 
 6. parameterized.expand takes an array of tuples with each tuple containing test
 data for each test case
+
+When is duplication not removed ?
+--------------------------------
+
+Avoid overloading a testcase with multiple behaviours. 
+Each behaviour should have separate test.
+Haing one test for more than one behaviour can make it difficult to maintain and follow
+as code grows larger
+
+If after eliminating duplication the refactored code is hard to read,
+then you go back and leave the duplication in
