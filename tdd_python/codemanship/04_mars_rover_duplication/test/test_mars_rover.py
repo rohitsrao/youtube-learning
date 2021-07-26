@@ -14,5 +14,10 @@ class MarsRoverTest(unittest.TestCase):
         rover = rover.go('R')
         self.assertEqual('S', rover.facing)
 
+    def test_turn_right_S_to_W(self):
+        rover = Rover('S')
+        rover = rover.go('R')
+        self.assertEqual('W', rover.facing)
+
 if __name__ == '__main__':
     unittest.main()
