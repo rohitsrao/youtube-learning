@@ -28,3 +28,9 @@ class StackTest(unittest.TestCase):
         self.stack.pop()
         self.assertFalse(self.stack.is_empty())
 
+    def test_after_pushing_X_will_pop_X(self):
+        self.stack.push(99)
+        self.stack.pop()
+        self.stack.push(88)
+        self.assertEqual(88, self.stack.pop())
+
