@@ -5,7 +5,7 @@ class Stack():
 
     def __init__(self):
         self.size = 0
-        self.element = None
+        self.elements = []
 
     def is_empty(self):
         if self.size == 0:
@@ -15,11 +15,13 @@ class Stack():
 
     def push(self, element):
         self.size += 1
-        self.element = element
+        self.elements.append(element)
 
     def pop(self):
         if self.is_empty() == True:
             raise UnderflowError('Stack is Empty')
         else: 
             self.size -= 1
-            return self.element
+            popped_element = self.elements[-1]
+            del self.elements[-1]
+            return popped_element

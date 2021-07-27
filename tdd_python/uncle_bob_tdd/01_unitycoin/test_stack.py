@@ -34,3 +34,8 @@ class StackTest(unittest.TestCase):
         self.stack.push(88)
         self.assertEqual(88, self.stack.pop())
 
+    def test_after_pushing_X_and_Y_will_pop_Y_and_X(self):
+        self.stack.push(99)
+        self.stack.push(88)
+        self.assertEqual(88, self.stack.pop())
+        self.assertEqual(99, self.stack.pop())
