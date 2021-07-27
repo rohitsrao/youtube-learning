@@ -10,7 +10,7 @@ class StackTest(unittest.TestCase):
     def test_new_stack_is_empty(self):
         self.assertTrue(self.stack.is_empty)
 
-    def test_push(self):
+    def test_after_one_push_is_not_empty(self):
         self.stack.push(0)
-        self.assertTrue(not self.stack.is_empty)
+        self.assertFalse(self.stack.is_empty)
 
