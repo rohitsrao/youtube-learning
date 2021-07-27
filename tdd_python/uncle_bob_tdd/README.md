@@ -18,3 +18,10 @@ It might feel like you are introducing bugs into your code and you are. You are
 only writing code that passes your test and not the actual functionality.
 So the question you have to now ask yourself is what test do I have to write that
 shows that the current code is a bug. Write that and then modify the code to pass.
+
+It is a good idea to not write tests directly for what you are building. 
+Do not go for the goal immedialtey. Lumber around. Think up different ways
+to throw the code off and then finally you'll arrive at the required code. 
+
+Let the test guide your development! So instead of asking what should I code next,
+you have to ask what should I test next! Think of intelligent tests
