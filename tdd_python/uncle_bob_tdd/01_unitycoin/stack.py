@@ -15,3 +15,6 @@ class Stack():
     def pop(self):
         if self.is_empty == True:
             raise UnderflowError('Stack is Empty')
+        else: 
+            self.is_empty = True
+            return -1
