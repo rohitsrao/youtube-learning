@@ -1,7 +1,10 @@
 class Stack():
 
     def __init__(self):
-        pass
+        self.is_empty = True
 
     def is_empty(self):
-        return True
+        return self.is_empty
+
+    def push(self, element):
+        self.is_empty = False
