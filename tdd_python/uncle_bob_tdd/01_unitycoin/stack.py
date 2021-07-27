@@ -4,17 +4,20 @@ class UnderflowError(Exception):
 class Stack():
 
     def __init__(self):
-        self.is_empty = True
+        self.size = 0
 
     def is_empty(self):
-        return self.is_empty
+        if self.size == 0:
+            return True
+        else:
+            return False
 
     def push(self, element):
-        self.is_empty = False
+        self.size += 1
 
     def pop(self):
-        if self.is_empty == True:
+        if self.is_empty() == True:
             raise UnderflowError('Stack is Empty')
         else: 
-            self.is_empty = True
+            self.size -= 1
             return -1
