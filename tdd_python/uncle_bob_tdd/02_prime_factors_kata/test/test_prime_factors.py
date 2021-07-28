@@ -3,7 +3,11 @@ import unittest
 def factorsOf(num):
     factors = []
     if num > 1:
-        factors.append(num)
+        if (num % 2 == 0):
+            factors.append(2)
+            num /= 2
+        if (num > 1):
+            factors.append(num)
     return factors
 
 class PrimeFactorsTest(unittest.TestCase):
