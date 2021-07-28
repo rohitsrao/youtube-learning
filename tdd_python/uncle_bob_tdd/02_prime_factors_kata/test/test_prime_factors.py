@@ -12,6 +12,7 @@ class PrimeFactorsTest(unittest.TestCase):
         self.assertEqual(len(factorsOf(1)), 0)
         self.assertListEqual(factorsOf(2), [2])
         self.assertListEqual(factorsOf(3), [3])
+        self.assertListEqual(factorsOf(4), [2, 2])
 
 if __name__ == '__main__':
     unittest.main()
