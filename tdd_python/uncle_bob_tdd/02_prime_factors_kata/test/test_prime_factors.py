@@ -1,13 +1,14 @@
 import unittest
 
 def factorsOf(num):
+    remainder = num
     factors = []
-    if num > 1:
-        if (num % 2 == 0):
+    if remainder > 1:
+        if (remainder % 2 == 0):
             factors.append(2)
-            num /= 2
-        if (num > 1):
-            factors.append(num)
+            remainder /= 2
+        if (remainder > 1):
+            factors.append(remainder)
     return factors
 
 class PrimeFactorsTest(unittest.TestCase):
