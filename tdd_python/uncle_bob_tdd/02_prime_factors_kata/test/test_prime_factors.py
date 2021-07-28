@@ -23,6 +23,9 @@ class PrimeFactorsTest(unittest.TestCase):
         self.assertListEqual(factorsOf(7), [7])
         self.assertListEqual(factorsOf(8), [2, 2, 2])
         self.assertListEqual(factorsOf(9), [3, 3])
+        self.assertListEqual(factorsOf(10), [2, 5])
+        self.assertListEqual(factorsOf(2*3*5*7*11*13), [2, 3, 5, 7, 11, 13])
+        self.assertListEqual(factorsOf(2*2*3*3*3*5*5*5*5*5), [2, 2, 3, 3, 3, 5, 5, 5, 5, 5])
 
 if __name__ == '__main__':
     unittest.main()
