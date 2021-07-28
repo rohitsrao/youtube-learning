@@ -21,6 +21,7 @@ class PrimeFactorsTest(unittest.TestCase):
         self.assertListEqual(factorsOf(5), [5])
         self.assertListEqual(factorsOf(6), [2, 3])
         self.assertListEqual(factorsOf(7), [7])
+        self.assertListEqual(factorsOf(8), [2, 2, 2])
 
 if __name__ == '__main__':
     unittest.main()
