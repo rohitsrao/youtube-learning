@@ -7,8 +7,8 @@ def factorsOf(num):
         if (remainder % 2 == 0):
             factors.append(2)
             remainder /= 2
-        if (remainder > 1):
-            factors.append(remainder)
+    if (remainder > 1):
+        factors.append(remainder)
     return factors
 
 class PrimeFactorsTest(unittest.TestCase):
