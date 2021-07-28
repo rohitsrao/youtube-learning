@@ -7,6 +7,9 @@ def factorsOf(num):
         while (remainder % 2 == 0):
             factors.append(2)
             remainder /= 2
+        while (remainder % 3 == 0):
+            factors.append(3)
+            remainder /= 3
     if (remainder > 1):
         factors.append(remainder)
     return factors
