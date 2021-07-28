@@ -4,7 +4,7 @@ def factorsOf(num):
     remainder = num
     factors = []
     if remainder > 1:
-        if (remainder % 2 == 0):
+        while (remainder % 2 == 0):
             factors.append(2)
             remainder /= 2
     if (remainder > 1):
