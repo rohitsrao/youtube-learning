@@ -9,8 +9,6 @@ def factorsOf(num):
             factors.append(divisor)
             remainder /= divisor
         divisor += 1
-    if (remainder > 1):
-        factors.append(remainder)
     return factors
 
 class PrimeFactorsTest(unittest.TestCase):
