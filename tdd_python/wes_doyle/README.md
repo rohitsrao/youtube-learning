@@ -9,3 +9,9 @@ It accepts a string into the input and in response we get a visualisation of Nam
 - spacy (Natural Language Processing)
 - flask
 - pytest
+
+### Learning
+
+While TDD is extremely useful as a practice to write testable code and building designs, 
+it isn't going to make design descisions for you. You can write bad code with TDD it is just
+far less likely.
