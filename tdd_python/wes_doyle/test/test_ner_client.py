@@ -34,3 +34,27 @@ class TestNerClient(unittest.TestCase):
             'html': ""
         }
         self.assertListEqual(result['ents'], expected_result['ents'])
+
+    def test_get_ents_given_spacy_NORP_is_returned_serializes_to_Group(self):
+        model = NerModelTestDouble('eng')
+        doc_ents = [{'text': 'Lithuanian', 'label_': 'NORP'}]
+        model.return_doc_ents(doc_ents)
+        ner = NamedEntityClient(model)
+        result = ner.get_ents('...')
+        expected_result = {
+            'ents': [{'ent': 'Lithuanian', 'label': 'Group'}],
+            'html': ""
+        }
+        self.assertListEqual(result['ents'], expected_result['ents'])
+
+    def test_get_ents_given_spacy_LOC_is_returned_serializes_to_Location(self):
+        model = NerModelTestDouble('eng')
+        doc_ents = [{'text': 'the ocean', 'label_': 'LOC'}]
+        model.return_doc_ents(doc_ents)
+        ner = NamedEntityClient(model)
+        result = ner.get_ents('...')
+        expected_result = {
+            'ents': [{'ent': 'the ocean', 'label': 'Location'}],
+            'html': ""
+        }
+        self.assertListEqual(result['ents'], expected_result['ents'])
