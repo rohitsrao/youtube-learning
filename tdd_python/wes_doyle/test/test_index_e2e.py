@@ -21,6 +21,10 @@ class E2ETests(unittest.TestCase):
         input_element = self._find('input-text')
         self.assertIsNotNone(input_element)
 
+    def test_page_has_button_for_submitting_text(self):
+        submit_button = self._find('find-button')
+        self.assertIsNotNone(submit_button)
+
     def _find(self, val):
         return self.driver.find_element_by_css_selector(f'[data-test-id="{val}"]')
 
