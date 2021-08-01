@@ -2,7 +2,7 @@
 
 This project was coded along to Wes Doyle's excellent tutorial on TDD with Python - https://www.youtube.com/watch?v=eAPmXQ0dC7Q
 
-It accepts a string into the input and in response we get a visualisation of Named Entity
+It accepts a string into the input and in response we get a visualisation of Named Entities
 
 #### Python Modules used
 - selenium
