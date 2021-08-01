@@ -4,6 +4,8 @@ This project was coded along to Wes Doyle's excellent tutorial on TDD with Pytho
 
 It accepts a string into the input and in response we get a visualisation of Named Entities
 
+This project contains a mix of unit tests, end-to-end browser tests and an integration test
+
 #### Python Modules used
 - selenium
 - spacy (Natural Language Processing)
