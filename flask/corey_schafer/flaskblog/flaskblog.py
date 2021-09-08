@@ -11,7 +11,7 @@ posts = [
         'date_posted': 'Sep 7, 2021',
     },
     {
-        'author': 'Rohit Doppelgänger',
+    'author': 'Rohit Doppelgänger',
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': 'Sep 8, 2021',
