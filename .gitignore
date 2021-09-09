@@ -1,6 +1,6 @@
 __pycache__/
 
-config.py
+config_values.py
 mail_credentials.py
 
 *.db
