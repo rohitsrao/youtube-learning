@@ -6,4 +6,4 @@ mail_credentials.py
 *.db
 
 react/fcc/rmdb/node_modules
-react/fcc/rmdb/env
+react/fcc/rmdb/.env
