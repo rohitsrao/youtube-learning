@@ -14,7 +14,6 @@ export const Content = styled.div`
   margin: 0 auto;
 `;
 
-
 export const RMDBLogoImg = styled.img`
   width: 200px;
 
