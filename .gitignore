@@ -8,24 +8,12 @@ mail_credentials.py
 react/fcc/rmdb/node_modules
 react/fcc/rmdb/.env
 
-
-#flutter/flutter_explained/timeofday/.dart_tool
-#flutter/flutter_explained/timeofday/.idea
-#flutter/flutter_explained/timeofday/.metadata
-#flutter/flutter_explained/timeofday/.packages
-#flutter/flutter_explained/timeofday/analysis_options.yaml
-#flutter/flutter_explained/timeofday/timeofday.iml
-#flutter/flutter_explained/timeofday/android/
-#flutter/flutter_explained/timeofday/ios/
-#flutter/flutter_explained/timeofday/web/
-#flutter/flutter_explained/timeofday/build/
-
 flutter/*/*/.dart_tool
 flutter/*/*/.idea
 flutter/*/*/.metadata
 flutter/*/*/.packages
 flutter/*/*/analysis_options.yaml
-flutter/*/*/bookshelf.iml
+flutter/*/*/*.iml
 flutter/*/*/android/
 flutter/*/*/ios/
 flutter/*/*/web/
