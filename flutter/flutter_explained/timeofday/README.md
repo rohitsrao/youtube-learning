@@ -4,5 +4,3 @@ The playlist being followed can be found [here](https://www.youtube.com/playlist
 
 Topics explored are
 * Unit Tests
-* Widget Tests
-* Integration Tests
