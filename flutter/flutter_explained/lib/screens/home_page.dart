@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/${TimeHelper.getTimeOfTheDay()}.jpg'),
+            image: AssetImage('assets/images/${TimeHelper.getTimeOfTheDay(DateTime.now())}.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 64),
             FittedBox(
               child: Text(
-                'Good ${TimeHelper.getTimeOfTheDay()}',
+                'Good ${TimeHelper.getTimeOfTheDay(DateTime.now())}',
                 style: TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.bold,
