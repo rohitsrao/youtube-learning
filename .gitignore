@@ -8,12 +8,12 @@ mail_credentials.py
 react/fcc/rmdb/node_modules
 react/fcc/rmdb/.env
 
-flutter_test/flutter_explained/.dart_tool
-flutter_test/flutter_explained/.idea
-flutter_test/flutter_explained/.metadata
-flutter_test/flutter_explained/.packages
-flutter_test/flutter_explained/analysis_options.yaml
-flutter_test/flutter_explained/flutter_explained.iml
-flutter_test/flutter_explained/android/
-flutter_test/flutter_explained/ios/
-flutter_test/flutter_explained/web/
+flutter/flutter_explained/.dart_tool
+flutter/flutter_explained/.idea
+flutter/flutter_explained/.metadata
+flutter/flutter_explained/.packages
+flutter/flutter_explained/analysis_options.yaml
+flutter/flutter_explained/flutter_explained.iml
+flutter/flutter_explained/android/
+flutter/flutter_explained/ios/
+flutter/flutter_explained/web/
