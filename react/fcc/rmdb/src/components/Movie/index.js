@@ -7,6 +7,7 @@ import { IMAGE_BASE_URL, POSTER_SIZE } from '../../config';
 //Components
 import BreadCrumb from '../BreadCrumb';
 import Grid from '../Grid';
+import MovieInfo from '../MovieInfo';
 import Spinner from '../Spinner';
 
 //Hook
@@ -26,6 +27,7 @@ const Movie = () => {
   return (
     <>
       <BreadCrumb movieTitle={movie.original_title} />
+      <MovieInfo movie={movie} />
     </>
   );
 
