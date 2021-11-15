@@ -4,6 +4,7 @@ import React from 'react';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../../config';
 
 //Components
+import Button from '../Button';
 import Grid from '../Grid';
 import HeroImage from '../HeroImage';
 import SearchBar from '../SearchBar';
@@ -46,7 +47,10 @@ const Home = () => {
           />
         ))}
       </Grid>
-      <Spinner />
+      {loading && <Spinner />}
+      {state.page < state.total_pages && !loading && (
+        <Button text='Load More' />
+      )}
     </>
   );
 
